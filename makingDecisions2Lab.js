@@ -67,10 +67,26 @@ var score = 74
 // Do not edit the code above.
 
 /*
-  Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
+  Determine if the letter grade of the given variable 'score'. 
+  If the variable is a 90 or above, console log an 'A', 
+  between 80 and 89, console log a 'B', 
+  between 70 and 79,'C', 
+  between 60 and 69, 'D', 
+  and anything below 60 should console log an 'F'.
 */
 
 //Code Here
+if(score >= 90) {
+  console.log(`A`);
+} else if (score >= 80) {
+  console.log(`B`);
+} else if (score >= 70) {
+  console.log(`C`);
+} else if (score >= 60) {
+  console.log(`D`);
+} else {
+  console.log(`F`); 
+}; 
 
 
 ////////// Intermediate Problems //////////
@@ -87,13 +103,25 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 
 //Code Here
 
+let someNum = myFavoriteNumbers[4]; 
+
 
 ////////// PROBLEM 7 //////////
 
-// Subscripting (accessing values using their index) an array can fail. What happens if you subscript to the 7th element, but there are not 7 elements in the array? Let's write some code to check for that. 
-// Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
+// Subscripting (accessing values using their index) an array can fail. What happens if you subscript to the 7th element, but there are not 7 elements in the array?
+// Let's write some code to check for that. 
+// Use an if statement to check the length of the 'myFavoriteNumbers' array. 
+//If it's less than 7, log 'There are not enough elements in this array' to the console.
+// If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. 
+//(Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
+if(myFavoriteNumbers.length < 7) {
+  console.log(`There are not enough elements in this array`)
+} else {
+  someNum = myFavoriteNumbers[6]; 
+};
+
 
 
 ////////// PROBLEM 8 //////////
@@ -102,9 +130,15 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Do not edit the code above.
 
-// Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
+// Use a for-loop to iterate through 'listOfNumbers', 
+//checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
+for(i = 0; i < listOfNumbers.length; i++) {
+  if(listOfNumbers[i] % 3 === 0) {
+    console.log(listOfNumbers[i] + " is divisible by 3.")
+  }
+}
 
 
 ////////// PROBLEM 9 //////////
